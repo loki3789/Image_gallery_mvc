@@ -1,0 +1,315 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 21, 2018, 7:41:07 PM
+    Author     : lokesh
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 21, 2018, 7:29:01 PM
+    Author     : lokesh
+*/
+/* The container */
+.add{
+    margin-left: 50px;
+                margin-top: 50px;
+                border: 3px solid green;
+                width: 35%;
+                padding: 10px;
+                margin:80px auto;
+}
+    
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+h1{
+                background-color:grey;
+                text-align: center;
+                font-size:50px;
+                   
+}
+       
+            
+                
+.nav{
+    width:100%;
+    background:black;
+    height: 90px;
+    margin-top: -18px;
+    opacity: 1;
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+}
+a{
+    width: 150px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+li{
+    float: left;
+    margin-top: 30px;
+}
+
+
+a:hover{
+    height: 30px;
+    background: red;
+    transition: 0.1s;
+    text-align: center;
+
+}
+
+
+
+.active {
+    background-color: #4CAF50;
+    height: 30px;
+}
+
+
+
+.nav li > a:hover,.nav ul li:hover > a {
+    background:red;
+    text-decoration: infobackground;
+}
+
+.nav li ul {
+    background: #333333;
+    display: none;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    width: 50px;
+    z-index: 200;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li li {
+
+    display: block;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+}
+
+.nav li:hover li a {
+    background: none;
+}
+
+.nav li ul a {
+    display: block;
+    height: 35px;
+    font-size: 12px;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px 10px 0px 15px;
+    text-align: left;
+}
+
+.nav li ul a:hover, .nav li ul li:hover > a {
+    background: #8B3E2F;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+input[type=password], select {
+    width: 100%;
+    padding: 3px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 70%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 3px 6px;
+    margin-right: 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+input[type=text]:hover {
+    background-color: bisque;
+    width: 50%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  background-color:beige;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.cursor {
+  cursor: pointer;
+}
+img {
+  margin-bottom: -4px;
+  padding-top: 10px;
+}
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
